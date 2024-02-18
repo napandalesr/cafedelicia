@@ -1,12 +1,9 @@
 // @ts-check
-const crypto = require('crypto-js');
 const { createSecureHeaders } = require('next-secure-headers');
-
-const nonce = crypto.lib.WordArray.random(10).toString(crypto.enc.Base64);
-const isProduction = process.env.NODE_ENV === 'production';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output:'export',
   reactStrictMode: true,
   distDir: 'build',
   async redirects() {
