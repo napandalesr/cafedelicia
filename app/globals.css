@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.banner {
+  background-image: url("../public/main_background.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 84%;
+  min-width: 100%;
+  height: 100vh;
+}
+
+.gradient {
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(227,225,215,0) 84%, rgba(249,217,96,0.15458683473389356) 100%);
+}
+
+.icon-vector {
+  max-width: 40px;
+  margin: 10px auto;
+}
+
+.icon-vector > svg:nth-child(2) {
+  margin-top: -18px;
+}
+
+.about, .call-to-action, .contact {
+  background-color: #fff4e5;
+}
+
+.overlay {
+  color: #F9E49F;
+  font-weight: 600;
+}
+
+.testimonial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/testimonial.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size:  210%;
+  background-position-y: 95%;
+  background-position-x: 78%;
+}
+
+.text-header {
+  font-family: "Comforter Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  border-radius: 28px;
+  display: flex;
+  font-size: 14px;
+}
+
+footer, .socials {
+  background-color: #301c03;
+  color: #FAFAFA;
+}
+
+.socials {
+  border-top: #F9E49F solid 2px;
+}
+
+@keyframes show_images_scroll {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+img, p, ul, button, h1, h2, h3, h4 {
+  view-timeline-name: --images;
+  view-timeline-axis: block;
+
+  animation-timeline: --images;
+  animation-name: show_images_scroll;
+
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+.icon-menu, .menu-mobile {
+  display: none;
+}
+
+@media screen and (max-width:800px ) {
+  .menu-desktop {
+    display: none;
+  }
+
+  .icon-menu, .menu-mobile {
+    display: block;
+  }
+}
+/*
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+*/
