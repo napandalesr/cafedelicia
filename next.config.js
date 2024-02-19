@@ -6,6 +6,13 @@ const nextConfig = {
   output:'export',
   reactStrictMode: true,
   distDir: 'build',
+  exportPathMap: function () {
+    return {
+      '/': { page: '/' },
+      '/home': { page: '/home' },
+      '/contact': { page: '/contact' },
+    };
+  },
   async redirects() {
     return [
       {
