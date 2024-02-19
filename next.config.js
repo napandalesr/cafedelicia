@@ -35,7 +35,7 @@ const nextConfig = {
               directives: {
                 defaultSrc: ["'none'"],
                 prefetchSrc: ["'self'"],
-                imgSrc: ["'self'"],
+                imgSrc: ["'self'", 'www.gstatic.com'],
                 baseURI: ["'self'"],
                 fontSrc: ["'self'", 'https://fonts.gstatic.com'],
                 frameSrc: ['*.google.com'],
@@ -45,9 +45,12 @@ const nextConfig = {
                   // `'nonce-${nonce}'`,
                   "'unsafe-inline'",
                 ],
-                scriptSrc: ["'self'", "'unsafe-eval'", "'unsafe-inline'"],
+                scriptSrc: ["'self'", "'unsafe-eval'", "'unsafe-inline'", 'https://www.google.com', 'https://www.gstatic.com'],
                 connectSrc: [
                   "'self'",
+                  '*.google.com',
+                  'https://www.google.com/',
+                  'https://*.googleapis.com'
                 ],
               },
             },
