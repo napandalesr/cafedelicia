@@ -5,7 +5,7 @@ const { createSecureHeaders } = require('next-secure-headers');
 const nextConfig = {
   reactStrictMode: true,
   distDir: 'build',
-  exportPathMap: function () {
+  generateStaticParams: async () => {
     return {
       '/': { page: '/' },
       '/home': { page: '/home' },
