@@ -3,7 +3,6 @@ const { createSecureHeaders } = require('next-secure-headers');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output:'export',
   reactStrictMode: true,
   distDir: 'build',
   exportPathMap: function () {
