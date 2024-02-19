@@ -1,17 +1,15 @@
-import Image from "next/image";
 import React from "react";
 
 const Footer = (): React.ReactElement => {
   return <footer className="flex px-4 md:px-48 justify-between flex-col md:flex-row pt-12 md:pt-16 md:pb-16">
     <aside className="mx-2 md:mx-12 pb-4 md:pb-0">
       <li className="list-none flex items-center">
-        <Image
-          src="/logo.png"
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/cafedelicia-1f909.appspot.com/o/logo.png?alt=media&token=07ca5a10-47a3-403b-ab26-84313a4d1794"
           alt="Logo"
           className="dark:invert"
           width={80}
           height={80}
-          priority
         />
         <strong className="ml-4">Café</strong>
         <span className="text-header ml-1">delicia</span>

@@ -1,5 +1,4 @@
 'use client'
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname  } from "next/navigation";
 import React, { useState } from "react";
@@ -10,13 +9,12 @@ const Header = (): React.ReactElement => {
   return <header>
     <section className="absolute text-white z-10 md:w-1/2 md:my-auto top-10 md:translate-x-1/2 backdrop-blur-sm bg-black/30 justify-between py-2 px-10 items-center mx-[10%] md:mx-[0px] rounded-3xl flex">
       <li className="list-none flex mr-[20vh] md:mr-[0px]">
-        <Image
-          src="/logo.png"
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/cafedelicia-1f909.appspot.com/o/logo.png?alt=media&token=07ca5a10-47a3-403b-ab26-84313a4d1794"
           alt="Logo"
           className="dark:invert"
           width={44}
           height={44}
-          priority
         />
         <strong className="py-3 px-1 md:pl-8">Café</strong>
         <span className="text-header py-3">delicia</span>

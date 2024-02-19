@@ -2,7 +2,7 @@
 import React from "react";
 
 const Banner = () => {
-  return <section className='banner brightness-40 from-current text-neutral-50 bg-[150%_auto] md:bg-[100%_auto] '>
+  return <section className='banner brightness-40 from-current text-neutral-50 bg-[180%_auto] md:bg-[100%_auto] '>
     <div className="gradient justify-center content-center flex-wrap flex h-full text-center font-normal flex-col pt-10">
       <p className="text-2xl md:text-5xl max-w-64 text-center md:max-w-2xl leading-snug mt-24 mx-auto">Disfrutá del sabor auténtico en <span style={{color: '#EE8E11'}}><strong>Café </strong><span className="text-header">delicia</span></span></p>
       <p className="max-w-2xl text-md md:text-lg p-4 md:p-1">Café Delicia es una experiencia única con café de alta calidad y un ambiente parchado para todos. !Vení y disfruta de un momento de delicia con nosotros¡</p>

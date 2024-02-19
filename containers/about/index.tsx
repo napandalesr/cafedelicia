@@ -1,19 +1,12 @@
 import React from "react";
-import Image from "next/image";
-
-import imgCoffe from '../../public/coffee.jpg';
-import iconOriginLocal from '../../public/icon-origin-local.png';
-import iconHolistic from '../../public/icon-holistic-approach.png';
-import product3 from '../../public/product-3.jpg';
 
 const About = () => {
   return <section className="about flex w-full md:px-32 px-4 md:py-24 flex-col">
     <article className="flex md:mx-24 md:pb-20 md:flex-row flex-col mt-8 md:mt-0">
-      <Image
-        src={imgCoffe}
+      <img
+        src='https://firebasestorage.googleapis.com/v0/b/cafedelicia-1f909.appspot.com/o/coffee.jpg?alt=media&token=84f309f0-d389-45b5-8872-39e05536bdc2'
         alt="Café"
         className="rounded-3xl"
-        priority
         width={350}
       />
       <span className="md:pl-24 flex flex-col">
@@ -25,11 +18,10 @@ const About = () => {
     </article>
     <aside className="flex md:mx-24 flex-col md:flex-row">
       <aside className="flex mb-10 md:mr-10 flex-col md:flex-row mt-12 md:mt-1">
-        <Image
-          src={iconOriginLocal}
+        <img
+          src='https://firebasestorage.googleapis.com/v0/b/cafedelicia-1f909.appspot.com/o/icon-origin-local.png?alt=media&token=91822739-9903-4710-9489-14d6db886c60'
           alt="origen local"
           className="rounded-3xl mx-auto md:mr-4 h-20 md:h-24 w-20 md:w-24 mb-4"
-          priority
         />
         <span>
           <h3 style={{color: '#EE8E11'}} className="text-md md:text-lg font-semibold text-center md:text-left mb-4 mt-4">Origen Local</h3>
@@ -37,11 +29,10 @@ const About = () => {
         </span>
       </aside>
       <aside className="flex flex-col md:flex-row">
-        <Image
-          src={iconHolistic}
+        <img
+          src='https://firebasestorage.googleapis.com/v0/b/cafedelicia-1f909.appspot.com/o/icon-holistic-approach.png?alt=media&token=4c0dc58b-e815-484a-afd8-c77ddf41cef3'
           alt="Origen histórico"
           className="rounded-3xl mx-auto md:mr-4 h-20 md:h-24 w-20 md:w-24 mb-4"
-          priority
           width={100}
         />
         <span>
@@ -54,33 +45,30 @@ const About = () => {
       <h2 className="font-bold text-3xl md:text-4xl my-8 text-center">Nuestros Servicios</h2>
       <aside className="flex flex-col md:flex-row">
         <article className="md:w-72">
-          <Image
-            src='/product-1.jpg'
+          <img
+            src='https://firebasestorage.googleapis.com/v0/b/cafedelicia-1f909.appspot.com/o/product-1.jpg?alt=media&token=ec65700e-570a-4e5d-b54e-911cb299ab47'
             alt="Servicios"
             className="rounded-3xl mx-auto"
-            priority
             width={300}
             height={300}
           />
           <p className="text-center text-sm mt-2 p-2"><strong>Cafetería especializada: </strong>Probá nuestra panedería fresca y emparejala con una bebidita caliente</p>
         </article>
         <article className="md:w-72 md:mx-24">
-          <Image
-            src='/product-2.jpg'
+          <img
+            src='https://firebasestorage.googleapis.com/v0/b/cafedelicia-1f909.appspot.com/o/product-2.jpg?alt=media&token=d8a5832a-f5cc-49ff-a54e-b74fb01f89bf'
             alt="Servicios"
             className="rounded-3xl mx-auto"
-            priority
             width={300}
             height={300}
           />
           <p className="text-center text-sm mt-2 p-2"><strong>¿Tenés calor?:</strong> Refrescate con nuestra linea de productos heladitos</p>
         </article>
         <article className="md:w-72">
-          <Image
-            src={product3}
+          <img
+            src='https://firebasestorage.googleapis.com/v0/b/cafedelicia-1f909.appspot.com/o/product-3.jpg?alt=media&token=20b58c42-32a0-4d2e-8399-afc7da855999'
             alt="Servicios"
             className="rounded-3xl mx-auto"
-            priority
             width={300}
             height={300}
           />

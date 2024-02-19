@@ -5,6 +5,9 @@ const { createSecureHeaders } = require('next-secure-headers');
 const nextConfig = {
   reactStrictMode: true,
   distDir: 'build',
+  images: {
+    domains: ['https://firebasestorage.googleapis.com', 'firebasestorage.googleapis.com'],
+},
   generateStaticParams: async () => {
     return {
       '/': { page: '/' },
@@ -35,7 +38,7 @@ const nextConfig = {
               directives: {
                 defaultSrc: ["'none'"],
                 prefetchSrc: ["'self'"],
-                imgSrc: ["'self'", 'www.gstatic.com'],
+                imgSrc: ["'self'", 'www.gstatic.com', 'https://firebasestorage.googleapis.com/'],
                 baseURI: ["'self'"],
                 fontSrc: ["'self'", 'https://fonts.gstatic.com'],
                 frameSrc: ['*.google.com'],
